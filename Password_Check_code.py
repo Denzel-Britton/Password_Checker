@@ -15,3 +15,17 @@ print(upper_case)
 characters= [upper_case,lower_case,special_char,digits]
 
 length= len(psswd)
+# setting paramaters for the scoring of the password
+score = 0
+
+if length > 8:
+    score += 1
+if length > 12:
+    score += 1
+if length >17:
+    score += 1
+if length > 20:
+    score += 1
+
+# will to query common password list. with filetype:txt
+#stopping point
